@@ -1,3 +1,10 @@
+body * {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +12,313 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color:#131518;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+#container {
+  background-image: radial-gradient(#232A34, #181E27);
+  width: 412px;
+  height: 416px;
+  margin: auto;
+  margin-top: 195px;
+  border-radius: 30px;
+  padding-top: 32px;
+  position: relative;
+}
+
+#container > * {
+  position: absolute;
+}
+
+#star {
+  width: 48px;
+  height: 48px;
+  background-color: #262E38;
+  border-radius: 50%;
+  left: 32px;
+  top:32px;
+  padding-top: 15px;
+}
+
+#star > svg{
+  width: 16.75px;
+  height: 16px;
+}
+
+#heading {
+  width: 201px;
+  height: 43px;
+  top: 110px;
+  left: 32px;
+  font-family: Overpass;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 35.45px;
+  text-align: left;
+  color: #FFFFFF;
+}
+
+.paragraph{
+  width: 340px;
+  height: 72px;
+  top: 160px;
+  left: 32px;
+  text-align: left;
+  font-family: Overpass;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #969FAD;
+}
+
+
+
+#rating {
+  width: 341px;
+  height: 51px;
+  top: 256px;
+  left: 32px;
+}
+
+#rating-list {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.rate {
+  position: relative;
+  width: 51px;
+  height: 51px;
+  background-color: #262E38;
+  border-radius: 50%;
+  cursor: pointer;
+  font-family: Overpass;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: center;
+  padding-top: 15px;
+  color: #7C8798
+}
+
+.submitbtn {
+  width: 341px;
+  height: 45px;
+  top: 339px;
+  left: 32px;
+  font-family: Overpass;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 18.99px;
+  letter-spacing: 2px;
+  text-align: center;
+  border-radius: 30px;
+  color: #FFFFFF;
+  background-color: #FC7614;
+  cursor: pointer;
+}
+
+
+.rate :hover {
+  background-color: #FC7614;
+  color: #FFFFFF;
+}
+
+
+#svg {
+  width: 162px;
+  height: 108px;
+  margin-top: 10px;
+  margin-left: 130px;
+}
+
+#svg > p {
+  width: 18.37px;
+  height: 1.55px;
+  top: 296.61px;
+  left: 706.47px;
+}
+
+#point {
+  width: 193px;
+  height: 32px;
+  margin-top: 30px;
+  margin-left: 120px;
+  font-family: Overpass;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  color: #FC7614;
+}
+
+#thanking {
+  width: 143px;
+  height: 43px;
+  margin-top: 20px;
+  margin-left: 149px;
+  font-family: Overpass;
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 35.45px;
+  text-align: left;
+  color:#FFFFFF;
+}
+
+#message {
+  width: 340px;
+height: 72px;
+margin-top: 20px;
+margin-left: 35px;
+gap: 0px;
+opacity: 0px;
+color: #969FAD;
+font-family: Overpass;
+font-size: 15px;
+font-weight: 400;
+line-height: 24px;
+text-align: center;
+
+}
+
+
+
+@media (max-width: 375px) {
+  body{
+    width: 375px;
+    height: 667px;
+  }
+
+  #container {
+    width: 327px;
+    height: 360px;
+  }
+
+  #star{
+    width: 40px;
+    height: 40px;
+    top: 24px;
+    left: 24px;    
+  }
+  #star >svg {
+    width: 13.96px;
+    height: 13.33px;
+  }
+
+  #heading{
+    width: 279px;
+    height: 37px;
+    top: 80px;
+    left: 24px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30.38px;
+    text-align: left;
+    
+  }
+  .paragraph{
+    width: 279px;
+    height: 66px;
+    top: 127px;
+    left: 24px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Overpass;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+  }
+  #rating{
+    width: 281px;
+    height: 42px;
+    top: 217px;
+    left: 24px;
+  }
+  .rate{
+    width: 42px;
+    height: 42px;
+    font-family: Overpass;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: 0.17499999701976776px;
+    text-align: center;
+
+  }
+
+  .submitbtn{
+    width: 279px;
+    height: 45px;
+    top: 283px;
+    left: 24px;
+  }
+
+  #svg {
+    width: 148px;
+    height: 108px;
+    margin-top: 10px;
+    margin-left: 75px;
+  }
+  
+  #svg > p {
+    width: 18.37px;
+    height: 1.55px;
+    top: 296.61px;
+    left: 706.47px;
+  }
+  
+  #point {
+    width: 168px;
+    height: 32px;
+    margin-top: 10px;
+    margin-left: 75px;
+    font-family: Overpass;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    color: #FC7614;
+  }
+  
+  #thanking {
+    width: 143px;
+    height: 43px;
+    margin-top: 6px;
+    margin-left: 95px;
+    font-family: Overpass;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30.38px;
+    text-align: center;
+    color: #FFFFFF    
+  }
+  
+  #message {
+    width: 279px;
+  height: 66px;
+  margin-top: 5px;
+  margin-left: 25px;
+  gap: 0px;
+  opacity: 0px;
+  color: #969FAD;
+  font-family: Overpass;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  
+  }
+  
+
 }
