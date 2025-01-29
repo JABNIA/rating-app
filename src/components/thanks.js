@@ -9,7 +9,7 @@ export default function Thankpage(props){
             </section>
             <h5 id="point">You selected {props.point} out of 5</h5>
             <h2 id="thanking">Thank you!</h2>
-            <p id="message">We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!   </p>
+            <p id="message">We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
         </div>
     )
 }
